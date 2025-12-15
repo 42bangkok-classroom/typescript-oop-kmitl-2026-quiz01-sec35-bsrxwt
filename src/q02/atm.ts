@@ -1,12 +1,18 @@
-const balance = Number(process.argv[2]);
-const amount = Number(process.argv[3]);
-if(Number.isNaN(balance)||Number.isNaN(amount)||balance === undefined||amount===undefined){
+const balance = process.argv[2];
+const amount = process.argv[3];
+if(balance===''||amount===''){
     console.log(`Invalid Input`);
     process.exit();
 }
-if(amount>balance){
+let ba = Number(balance);
+let am = Number(balance);
+if(Number.isNaN(ba)||Number.isNaN(am)){
+    console.log(`Invalid Input`);
+    process.exit();
+}
+if(am>ba){
     console.log(`Insufficient balance`);
-}else if(amount>5000){
+}else if(am>5000){
     console.log(`Exceeds per-withdrawal limit`);
 }else{
     console.log(`Withdrawal approved`);
