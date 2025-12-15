@@ -1,6 +1,6 @@
 const balance = Number(process.argv[2]);
 const amount = Number(process.argv[3]);
-if(Number.isNaN(balance)||Number.isNaN(amount)){
+if(Number.isNaN(balance)||Number.isNaN(amount)||balance === undefined||amount===undefined){
     console.log(`Invalid Input`);
     process.exit();
 }

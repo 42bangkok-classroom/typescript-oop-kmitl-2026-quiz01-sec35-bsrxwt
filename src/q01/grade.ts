@@ -1,8 +1,5 @@
 const score = Number(process.argv[2]); 
-if(isNaN(score)){
-  console.log("Invalid Input");
-  process.exit();
-}else if(score < 0 || score > 100){
+if(isNaN(score)||score < 0 || score > 100){
   console.log("Invalid Input");
   process.exit();
 }else{
