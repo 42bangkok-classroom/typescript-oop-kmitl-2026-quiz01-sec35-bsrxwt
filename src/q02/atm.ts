@@ -2,6 +2,7 @@ const balance = Number(process.argv[2]);
 const amount = Number(process.argv[3]);
 if(Number.isNaN(balance)||Number.isNaN(amount)){
     console.log(`Invalid Input`);
+    process.exit();
 }
 if(amount>balance){
     console.log(`Insufficient balance`);
