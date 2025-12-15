@@ -1,17 +1,21 @@
-const score = Number(process.argv[2]); 
-if(isNaN(score)||score < 0 || score > 100){
+const pop = process.argv[2]
+const score = Number(pop); 
+if(Number.isNaN(score)||score < 0 || score > 100){
+  console.log("Invalid Input");
+  process.exit();
+}else if(pop===''){
   console.log("Invalid Input");
   process.exit();
 }else{
   if (score >= 80) {
-    console.log("A");
+    console.log(`Grade is A`);
   } else if (score >= 70) {
-    console.log("B");
+    console.log(`Grade is B`);
   } else if (score >= 60) {
-    console.log("C");
+    console.log(`Grade is C`);
   } else if (score >= 50) {
-    console.log("D");
+    console.log(`Grade is D`);
   } else {
-    console.log("F");
+    console.log(`Grade is F`);
   } 
 }
