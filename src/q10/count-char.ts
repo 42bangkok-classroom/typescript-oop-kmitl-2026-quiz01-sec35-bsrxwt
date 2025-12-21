@@ -1,6 +1,5 @@
 const str = process.argv[2];
 if(!str||str.length===0){
-    console.log(`Invalid Input`);
     process.exit();
 }
 let ltcounted:number = 0;
