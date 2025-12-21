@@ -8,7 +8,7 @@ if(number%1!==0){
     process.exit();
 }
 if(number%3===0 && number%7===0){
-    console.log(`Foobar`);
+    console.log(`FooBar`);
 }else if(number%3===0){
     console.log(`Foo`);
 }else if(number%7===0){
