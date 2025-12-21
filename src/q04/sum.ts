@@ -3,6 +3,10 @@ if(Number.isNaN(number)||number<=0){
     console.log(`Invalid Input`);
     process.exit();
 }
+if(number%1!==0){
+    console.log(`Invalid Input`);
+    process.exit();
+}
 let sum = 0;
 for(let i=1;i<=number;i++){
   sum += i;
