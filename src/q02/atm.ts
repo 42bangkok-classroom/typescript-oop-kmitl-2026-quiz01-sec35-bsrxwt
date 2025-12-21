@@ -1,6 +1,6 @@
 const balance = process.argv[2];
 const amount = process.argv[3];
-if(balance.trim()===''||amount.trim()===''||balance===undefined||amount===undefined){
+if(balance===undefined||amount===undefined||balance===''||amount===''){
     console.log(`Invalid Input`);
     process.exit();
 }

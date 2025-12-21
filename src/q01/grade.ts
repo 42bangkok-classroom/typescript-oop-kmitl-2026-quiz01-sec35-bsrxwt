@@ -1,5 +1,5 @@
 const pop = process.argv[2]
-if(pop.trim()===''||pop===undefined){
+if(pop===undefined||pop===''){
   console.log("Invalid Input");
   process.exit();
 }
