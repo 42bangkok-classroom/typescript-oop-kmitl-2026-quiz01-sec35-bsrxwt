@@ -1,9 +1,10 @@
 const pop = process.argv[2]
-const score = Number(pop); 
-if(Number.isNaN(score)||score < 0 || score > 100){
+if(pop.trim()===''||pop===undefined){
   console.log("Invalid Input");
   process.exit();
-}else if(pop===''){
+}
+const score = Number(pop); 
+if(Number.isNaN(score)||score < 0 || score > 100){
   console.log("Invalid Input");
   process.exit();
 }else{

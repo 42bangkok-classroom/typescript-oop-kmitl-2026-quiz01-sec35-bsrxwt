@@ -1,11 +1,11 @@
 const balance = process.argv[2];
 const amount = process.argv[3];
-let ba = Number(balance);
-let am = Number(amount);
-if(balance===''||amount===''){
+if(balance.trim()===''||amount.trim()===''||balance===undefined||amount===undefined){
     console.log(`Invalid Input`);
     process.exit();
 }
+let ba = Number(balance);
+let am = Number(amount);
 if(Number.isNaN(ba)||Number.isNaN(am)){
     console.log(`Invalid Input`);
     process.exit();
