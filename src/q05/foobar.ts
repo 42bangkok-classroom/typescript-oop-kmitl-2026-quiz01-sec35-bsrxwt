@@ -8,11 +8,11 @@ if(number%1!==0){
     process.exit();
 }
 for(let i=1;i<=number;i++){
-if(number%3===0 && number%7===0){
+if(i%3===0 && i%7===0){
     console.log(`FooBar`);
-}else if(number%3===0){
+}else if(i%3===0){
     console.log(`Foo`);
-}else if(number%7===0){
+}else if(i%7===0){
     console.log(`Bar`);
 }else{
     console.log(`Invalid Input`);
