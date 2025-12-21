@@ -7,6 +7,7 @@ if(number%1!==0){
     console.log(`Invalid Input`);
     process.exit();
 }
+for(let i=1;i<=number;i++){
 if(number%3===0 && number%7===0){
     console.log(`FooBar`);
 }else if(number%3===0){
@@ -15,4 +16,5 @@ if(number%3===0 && number%7===0){
     console.log(`Bar`);
 }else{
     console.log(`Invalid Input`);
+}
 }
