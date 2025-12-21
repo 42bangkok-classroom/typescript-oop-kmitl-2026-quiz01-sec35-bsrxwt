@@ -15,6 +15,6 @@ if(i%3===0 && i%7===0){
 }else if(i%7===0){
     console.log(`Bar`);
 }else{
-    console.log(`Invalid Input`);
+    console.log(`${i}`);
 }
 }
