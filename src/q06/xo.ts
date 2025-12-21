@@ -3,13 +3,17 @@ if (Number.isNaN(input)||input <= 0) {
   console.log("Invalid Input");
   process.exit();
 }
+if(input%1!==0){
+    console.log(`Invalid Input`);
+    process.exit();
+}
 for(let row=0;row<input;row++){
     let line = '';
     for(let col=0;col<input;col++){
         if(row===0||row===input-1||col===0||col===input-1){
-            line += 'X';
+            line += 'x';
         }else{
-            line += 'O';
+            line += 'o';
         }
     }
     console.log(line);
